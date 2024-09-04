@@ -11,7 +11,7 @@ This is a web application that allows users to search for universities and manag
 
 1. Clone this repository:
     ```
-    git clone <repository-url>
+    git clone 'https://github.com/derekjj/university-search-app'
     cd university-search-app
     ```
 
