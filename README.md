@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# University Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application that allows users to search for universities and manage their favorites.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+- Docker
+- Node.js and npm (for local development)
 
-### `npm start`
+## Running the Application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone this repository:
+    ```
+    git clone <repository-url>
+    cd university-search-app
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Using Docker Compose:
+    - for dev
 
-### `npm test`
+        ```
+        docker-compose up react-dev
+        ```
+    - for prod
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        ```
+        docker-compose up react-prod
+        ```
+3. or To run server without docker
+    - <sub> (only required once after clone) <sub>
+        ```
+        npm install
+        ```
+    - start the server
+        ```
+        npm run serve
+        ```
+4. Open your web browser and navigate to `http://localhost:3000` to use the application.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Search for universities by country
+- Filter results by name
+- Add/remove universities to/from favorites
+- View favorites
+- Responsive design for mobile and desktop
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React
+- React Router
+- Docker
+- Bootstrap & CSS for styling
 
-### `npm run eject`
+## API Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This application uses the API from http://universities.hipolabs.com/search to fetch university data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Feel free to submit pull requests or create issues for any bugs or improvements.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the [MIT License](LICENSE).
